@@ -698,6 +698,25 @@
             text-align: left;
             font-size: 9px;
         }
+        .profile-content{
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          padding: 10px;
+        }
+        .profile-content img{
+           width: 200px !important;
+        }
+        .profile-text h3{
+          font-size:1.4rem;
+        }
+        .profile-text p strong{
+           font-size: 15px;
+        }
+        .profile-text p{
+          font-size: 18px;
+        }
     }
 
     @media (max-width: 468px) {
@@ -732,6 +751,96 @@
           max-width: 100%;
         }
     }
+@media (max-width: 390px) {
+  .hero-section {
+      padding: 40px 10px !important;
+  }
+  
+  .profile-content {
+      flex-direction: column;
+      text-align: center;
+      width: 100% !important;
+      margin: 0 auto !important;
+      padding: 5px !important;
+  }
+  
+  .profile-content img {
+      width: 180px !important;
+      height: auto;
+      margin: 0 auto 15px auto !important;
+  }
+  
+  .profile-text {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 0 5px !important;
+  }
+  
+  .profile-text h3 {
+      font-size: 1.2rem !important;
+      margin-bottom: 10px !important;
+      line-height: 1.3;
+  }
+  
+  .profile-text p {
+      font-size: 14px !important;
+      line-height: 1.4;
+      margin-bottom: 8px !important;
+  }
+  
+  .profile-text p strong {
+      font-size: 13px !important;
+      font-weight: 600;
+  }
+  
+  /* Ensure proper text wrapping */
+  .profile-text p,
+  .profile-text p strong {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+  }
+  
+  /* Adjust follower boxes for very small screens */
+  .followers-box {
+      padding: 8px !important;
+      margin: 5px !important;
+  }
+  
+  .followers-box .count {
+      font-size: 16px !important;
+  }
+  
+  .followers-box .label {
+      font-size: 8px !important;
+  }
+}
+
+/* Additional fix for extremely small screens */
+@media (max-width: 320px) {
+  .profile-content img {
+      width: 150px !important;
+  }
+  
+  .profile-text h3 {
+      font-size: 1.1rem !important;
+  }
+  
+  .profile-text p {
+      font-size: 13px !important;
+  }
+  
+  .profile-text p strong {
+      font-size: 12px !important;
+  }
+  
+  .followers-box {
+      padding: 6px !important;
+  }
+  
+  .followers-box .count {
+      font-size: 14px !important;
+  }
+}
 
     @media (max-width: 768px) {
         .hero-section {
